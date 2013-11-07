@@ -1,0 +1,12 @@
+HOSTS:
+  master:
+    roles:
+      - master
+      - agent
+    platform: centos-6-i386
+    ip: 10.20.1.95
+  agent:
+    roles:
+      - agent
+    platform: centos-6-i386
+    ip: 10.20.1.96
