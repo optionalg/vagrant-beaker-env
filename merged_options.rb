@@ -9,10 +9,15 @@
  :xml=>true,
  :install=>
   [
-   "git://github.com/puppetlabs/facter.git#stable",
-   "git://github.com/puppetlabs/hiera.git#stable",
-   "git://github.com/adrienthebo/puppet#17a6d5aaec6e96",
+   "file:///vagrant/facter#stable",
+   "file:///vagrant/hiera#stable",
+   "file:///vagrant/puppet#HEAD",
   ],
+#  [
+#   "git://github.com/puppetlabs/facter.git#stable",
+#   "git://github.com/puppetlabs/hiera.git#stable",
+#   "git://github.com/jpartlow/puppet#feature/7243/csr-attributes-test",
+#  ],
  :pre_suite=>["setup/git/pre-suite"],
  :ntp=>true,
  :preserve_hosts=>true}
