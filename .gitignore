@@ -1,0 +1,6 @@
+hiera.git
+facter.git
+junit
+log
+Gemfile.lock
+beaker
